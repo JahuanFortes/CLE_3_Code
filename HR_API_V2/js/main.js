@@ -4,8 +4,12 @@ window.addEventListener("load", init);
 let apiUrl = "apiLink.php";
 let apiData = [];
 
+function init() {
+  fetchHandeler(apiUrl, getRecipe);
+}
+
 //fetchHandeler
-function fetchHandeler(params) {
+function fetchHandeler(apiUrl, successHandler) {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
@@ -17,6 +21,14 @@ function fetchHandeler(params) {
     .catch(errorHandler);
 }
 
+function getRecipe(data) {
+  let recipeCards = document.createElement("div");
+}
 //DOMHandeler
 
 //errorHandeler
+function errorHandler() {
+  let error = document.createElement("div");
+  error.classList.add("error");
+  error.innerHTML = "Er is een error!";
+}
