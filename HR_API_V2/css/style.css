@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*#region navbar*/
+.navbar {
+  color: white;
+  text-align: center;
+  list-style: none;
+}
+
+.navbar > ul {
+  text-align: center;
+  list-style: none;
+}
+
+.navbar :link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar :visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar > a :hover {
+  text-decoration: underline;
+}
+/*#endregion navbar*/
+
+/*#region cards*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 25rem;
+  height: 35rem;
+  margin: 2.5rem;
+  background-color: white;
+}
+
+.card > h2 {
+  text-align: center;
+}
+
+.card-img {
+  width: 50%;
+  height: 214px;
+  border-radius: 12px;
+}
+/*#endregion cards*/
