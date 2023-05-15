@@ -41,7 +41,7 @@ function getDishDetails($id)
 {
     $tags = [
         1 => [
-            "recipe" => "Put it in the oven and go!",
+            "recipe" => "",
             "tags" => ['cheese', 'oven']
         ],
         2 => [

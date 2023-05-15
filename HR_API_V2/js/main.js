@@ -5,7 +5,7 @@ let apiUrl = "apiLink.php";
 let apiData = [];
 
 function init() {
-  fetchHandeler(apiUrl, getRecipe);
+  fetchHandeler(apiUrl);
 }
 
 //fetchHandeler
@@ -21,10 +21,24 @@ function fetchHandeler(apiUrl, successHandler) {
     .catch(errorHandler);
 }
 
-function getRecipe(data) {
-  let recipeCards = document.createElement("div");
-}
 //DOMHandeler
+function cardMaker(data) {
+  for (let cards of data.results) {
+    fetch(apiUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
+        return response.json();
+      })
+      .then(fetchHandeler)
+      .catch(errorHandler);
+  }
+  let cardChoice = document.createElement("article");
+  cardChoice.innerHTML = card.name;
+  cardChoice.value = card.id;
+  cards.appendChild(cardChoice);
+}
 
 //errorHandeler
 function errorHandler() {
