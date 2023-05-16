@@ -2,34 +2,49 @@
 /**
  * @return array
  */
-function getDishes()
+function Dishes()
 {
     return [
         [
             "id" => 1,
-            "name" => "Pizza",
-            "kitchen" => "Italian",
+            "name" => "Rijst"
         ],
         [
             "id" => 2,
-            "name" => "Kale",
-            "kitchen" => "Dutch",
+            "name" => "Kale"
         ],
         [
             "id" => 3,
-            "name" => "Lasagna",
-            "kitchen" => "Italian",
+            "name" => "Lasagna"
         ],
         [
             "id" => 4,
-            "name" => "Kebab",
-            "kitchen" => "Turkish",
+            "name" => "Kebab"
         ],
         [
             "id" => 5,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
-        ]
+            "name" => "Paella"
+        ],
+        [
+            "id" => 6,
+            "name" => "Paella"
+        ],
+        [
+            "id" => 7,
+            "name" => "Paella"
+        ],
+        [
+            "id" => 8,
+            "name" => "Paella"
+        ],
+        [
+            "id" => 9,
+            "name" => "Paella"
+        ],
+        [
+            "id" => 10,
+            "name" => "Paella"
+        ],
     ];
 }
 
@@ -37,29 +52,63 @@ function getDishes()
  * @param $id
  * @return mixed
  */
-function getDishDetails($id)
+function getDish($id)
 {
     $tags = [
         1 => [
-            "recipe" => "",
-            "tags" => ['cheese', 'oven']
+           [
+                 "id" => "1",
+                "title" => "game 1",
+                "sport" => "test 1",
+                "tags" => 'Zwemmen',
+                "desription" => "1"
+           ]
         ],
         2 => [
-            "recipe" => "You can make this delicious Dutch meal by ...",
-            "tags" => ['unox', 'healthy', 'stamppot', 'boerenkool']
+            [
+
+            ]
         ],
         3 => [
-            "recipe" => "Very nice when your grandma prepares this meal",
-            "tags" => ['omnomnom']
+            [
+
+            ]
         ],
         4 => [
-            "recipe" => "Everytime in the city after midnight",
-            "tags" => ['kapsalon', 'tasty', 'meat']
+            [
+
+            ]
         ],
         5 => [
-            "recipe" => "Specialty when on holiday in Spain",
-            "tags" => ['fish']
+            [
+
+            ]
         ],
+        6 => [
+            [
+
+            ]
+        ],
+        7 => [
+            [
+
+            ]
+        ],
+        8 => [
+            [
+
+            ]
+        ],
+        9 => [
+            [
+
+            ]
+        ],
+        10 => [
+            [
+
+            ]
+        ]
     ];
 
     return $tags[$id];

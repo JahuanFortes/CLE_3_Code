@@ -1,10 +1,12 @@
 window.addEventListener("load", init);
 
 //global vars
-let apiUrl = "apiLink.php";
+let apiUrl = "../public/apiLink.php";
 let apiData = [];
-
+let cards;
+let cardSection;
 function init() {
+  cardSection = document.getElementById("cardSection");
   fetchHandeler(apiUrl);
 }
 
@@ -23,7 +25,12 @@ function fetchHandeler(apiUrl, successHandler) {
 
 //DOMHandeler
 function cardMaker(data) {
-  for (let cards of data.results) {
+  for (cards of data.results) {
+    let cardChoice = document.createElement("article");
+    cardChoice.innerHTML = cards.name;
+    cardChoice.value = cards.id;
+    cards.appendChild(cardSection);
+
     fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {
@@ -34,10 +41,6 @@ function cardMaker(data) {
       .then(fetchHandeler)
       .catch(errorHandler);
   }
-  let cardChoice = document.createElement("article");
-  cardChoice.innerHTML = card.name;
-  cardChoice.value = card.id;
-  cards.appendChild(cardChoice);
 }
 
 //errorHandeler
@@ -45,4 +48,5 @@ function errorHandler() {
   let error = document.createElement("div");
   error.classList.add("error");
   error.innerHTML = "Er is een error!";
+  error.appendChild(cardSection);
 }
