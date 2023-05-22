@@ -38,14 +38,14 @@ body {
   justify-content: space-between;
 }
 
-.card {
+.card-options {
   width: 25rem;
   height: 35rem;
   margin: 2.5rem;
   background-color: white;
 }
 
-.card > h2 {
+.card-options > h2 {
   text-align: center;
 }
 

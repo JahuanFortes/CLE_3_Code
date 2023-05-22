@@ -5,13 +5,15 @@ let apiUrl = "../public/apiLink.php";
 let apiData = [];
 let cards;
 let cardSection;
+
 function init() {
   cardSection = document.getElementById("cardSection");
+  foodCards = document.getElementById("cardOption");
   fetchHandeler(apiUrl);
 }
 
 //fetchHandeler
-function fetchHandeler(apiUrl, successHandler) {
+function fetchHandeler(apiUrl, fetchHandeler) {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
@@ -19,17 +21,17 @@ function fetchHandeler(apiUrl, successHandler) {
       }
       return response.json();
     })
-    .then(successHandler)
+    .then(fetchHandeler)
     .catch(errorHandler);
 }
 
 //DOMHandeler
 function cardMaker(data) {
-  for (cards of data.results) {
-    let cardChoice = document.createElement("article");
-    cardChoice.innerHTML = cards.name;
-    cardChoice.value = cards.id;
-    cards.appendChild(cardSection);
+  for (Dishes of data.results) {
+    const foodCards = document.createElement("article");
+    foodCards.id = "cardOptions";
+    foodCards.classList.add("card-options");
+    cardSection.section.appendChild(foodCards);
 
     fetch(apiUrl)
       .then((response) => {
