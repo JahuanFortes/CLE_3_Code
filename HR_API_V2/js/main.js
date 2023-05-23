@@ -9,11 +9,11 @@ let cardSection;
 function init() {
   cardSection = document.getElementById("cardSection");
   foodCards = document.getElementById("cardOption");
-  fetchHandeler(apiUrl);
+  getCard(apiUrl);
 }
 
 //fetchHandeler
-function fetchHandeler(apiUrl, fetchHandeler) {
+function getCard(apiUrl, fetchHandeler) {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
