@@ -5,15 +5,18 @@ let apiUrl = "../public/apiLink.php";
 let apiData = [];
 let cards;
 let cardSection;
+let foodDetail;
 
 function init() {
   cardSection = document.getElementById("cardSection");
   foodCards = document.getElementById("cardOption");
-  getCard(apiUrl);
+  foodDetail = document.getElementById("foodDetail");
+  //foodDetail.addEventListener("click")
+  getCard(apiUrl, cardMaker);
 }
 
 //fetchHandeler
-function getCard(apiUrl, fetchHandeler) {
+function getCard(apiUrl, cardMaker) {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
@@ -21,30 +24,34 @@ function getCard(apiUrl, fetchHandeler) {
       }
       return response.json();
     })
-    .then(fetchHandeler)
+    .then(cardMaker)
     .catch(errorHandler);
 }
 
 //DOMHandeler
 function cardMaker(data) {
-  for (Dishes of data.results) {
+  for (let index = 0; index < data.length; index++) {
+    const dish = data[index];
+
     const foodCards = document.createElement("article");
     foodCards.id = "cardOptions";
     foodCards.classList.add("card-options");
-    cardSection.section.appendChild(foodCards);
+    cardSection.appendChild(foodCards);
 
-    fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(response.statusText);
-        }
-        return response.json();
-      })
-      .then(fetchHandeler)
-      .catch(errorHandler);
+    //Title
+    const dishTitle = document.createElement("h2");
+    dishTitle.innerHTML = dish.name;
+    foodCards.appendChild(dishTitle);
+
+    //imgs
+    const dishImg = document.createElement("img");
+    dishImg.src = ".." + dish.image;
+    dishImg.classList.add("card-img");
+    foodCards.appendChild(dishImg);
+
+    //onClick
   }
 }
-
 //errorHandeler
 function errorHandler() {
   let error = document.createElement("div");
