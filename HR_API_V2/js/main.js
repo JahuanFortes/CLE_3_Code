@@ -88,11 +88,7 @@ function createDetailBtn(id) {
 //#endregion Detail button
 
 //#region details content
-/**
- * Open the detailview with information of a Pokémon
- *
- * @param e
- */
+
 function showDetails(id) {
   fetch(`${apiUrl}?id=${id}`)
     .then((response) => {
@@ -103,10 +99,8 @@ function showDetails(id) {
     })
     .then((data) => {
       const dish = data[0];
-      //Reset the content
       detailContent.innerHTML = "";
 
-      // Show the name we used on the main grid
       const dishTitle = document.createElement("h1");
       dishTitle.innerHTML = dish.name;
       detailContent.appendChild(dishTitle);
@@ -155,7 +149,7 @@ function addToFavorite(id) {
   if (!favorites) {
     favorites = [];
   } else {
-    // get fav list string and  parse it into a list
+    // get fav list string and parse it into a list
     favorites = JSON.parse(favorites);
   }
 
