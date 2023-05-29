@@ -43,6 +43,7 @@ body {
   height: 35rem;
   margin: 2.5rem;
   background-color: white;
+  cursor: pointer;
 }
 
 .card-options > h2 {
@@ -53,6 +54,7 @@ body {
   width: 50%;
   height: 214px;
   border-radius: 12px;
+  justify-content: center;
 }
 /*#endregion cards*/
 

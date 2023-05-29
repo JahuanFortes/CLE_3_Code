@@ -8,53 +8,63 @@ function Dishes()
         [
             "id" => 1,
             "name" => "Rijst",
-            "image" => "/img/shutterstock_660137851.jpg"
+            "image" => "/img/shutterstock_660137851.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 2,
             "name" => "Kale",
-            "image" => "/img/B685CC43-D01C-4A43-90CD-DAF49C92E16A.jpeg"
+            "image" => "/img/B685CC43-D01C-4A43-90CD-DAF49C92E16A.jpeg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 3,
             "name" => "Lasagna",
-            "image" => "/img/shutterstock_558677326_0.jpg"
+            "image" => "/img/shutterstock_558677326_0.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
 
         ],
         [
             "id" => 4,
             "name" => "Kebab",
-            "image" => "/img/pbj-baycare-clinic-blog.jpg"
+            "image" => "/img/pbj-baycare-clinic-blog.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 5,
             "name" => "Paella",
-            "image" => "/img/pristine-sunny-side-up-eggs-8031221-dba532694b054bfb9de2da42bb6f87e7.jpg"
+            "image" => "/img/pristine-sunny-side-up-eggs-8031221-dba532694b054bfb9de2da42bb6f87e7.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 6,
             "name" => "Paella",
-            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+            "image" => "/img/Cheeseburger-3d7c922.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 7,
             "name" => "Paella",
-            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+            "image" => "/img/Crispy-Oven-Baked-Chicken-Wings-feat2.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 8,
             "name" => "Paella",
-            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+            "image" => "/img/GrissiniBreadSticks-3.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 9,
             "name" => "Paella",
-            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+            "image" => "/img/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
         [
             "id" => 10,
             "name" => "Paella",
-            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+            "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg",
+            "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
         ],
     ];
 }
@@ -69,100 +79,101 @@ function getDish($id)
         1 => [
             [
                 "id" => "1",
-                "title" => "food 1",
+                "name" => "food 1",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/shutterstock_660137851.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         2 => [
             [
                 "id" => "2",
-                "title" => "food 1",
+                "name" => "food 2",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/B685CC43-D01C-4A43-90CD-DAF49C92E16A.jpeg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         3 => [
             [
                 "id" => "3",
-                "title" => "food 1",
+                "name" => "food 3",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/shutterstock_558677326_0.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         4 => [
             [
                 "id" => "4",
-                "title" => "food 1",
+                "name" => "food 4",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/pbj-baycare-clinic-blog.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         5 => [
             [
                 "id" => "5",
-                "title" => "food 1",
+                "name" => "food 5",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/pristine-sunny-side-up-eggs-8031221-dba532694b054bfb9de2da42bb6f87e7.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         6 => [
             [
                 "id" => "6",
-                "title" => "food 1",
+                "name" => "food 6",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
+                "image" => "/img/Cheeseburger-3d7c922.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         7 => [
             [
                 "id" => "7",
-                "title" => "food 1",
+                "name" => "food 7",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/Crispy-Oven-Baked-Chicken-Wings-feat2.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         8 => [
             [
                 "id" => "8",
-                "title" => "food 1",
+                "name" => "food 8",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/GrissiniBreadSticks-3.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         9 => [
             [
                 "id" => "9",
-                "title" => "food 1",
+                "name" => "food 9",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ],
         10 => [
             [
                 "id" => "10",
-                "title" => "food 10",
+                "name" => "food 10",
                 "time" => "60 min",
                 "require" => "pot",
-                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg"
-
+                "image" => "/img/20210919052613-breakfast-toast-topper-1030x687.jpg",
+                "details" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam, minima unde magni magnam provident."
             ]
         ]
     ];
